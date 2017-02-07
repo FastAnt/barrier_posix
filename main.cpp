@@ -1,10 +1,13 @@
 #include<stdio.h>
 #include<string.h>
-#include<pthread.h>
-#include<stdlib.h>
-#include<unistd.h>
 #include <iostream>
+
 #include <fstream>
+
+#include<pthread.h>
+#include<unistd.h>
+#include<stdlib.h>
+
 #include <vector>
 #include <list>
 
