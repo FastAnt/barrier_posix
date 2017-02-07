@@ -10,8 +10,7 @@
 
 using namespace std;
 
-#define pidfile "main.pid"
-//#define pidfile "/home/box/main.pid"
+#define PID_FILE_NAME "/home/box/main.pid"
 
 enum errThreadCreate{};
 vector<pthread_t> threadConteiner;
@@ -43,7 +42,7 @@ void * threadsWorkWithConditionSignal(void * arg)
 
 void savePIDtoFile()
 {
-    std::ofstream f (pidfile);
+    std::ofstream f (PID_FILE_NAME);
     f << getpid() << std::endl;
 }
 
